@@ -1,0 +1,91 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color:rgba(125, 56, 150, 0.5)
+
+}
+
+li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / .1);
+}
+
+li:hover {
+    background-color: rgba(230, 230, 250, 0.76);
+}
+
+.main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.form-div {
+    background-color: white;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / .2);
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.form-div input {
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / .1);
+}
+
+.form-div button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: rgb(156, 83, 182);
+    transition: .6s;
+}
+
+.form-div button:hover {
+    box-shadow: 0px 0px 4px 2px rgba(156, 83, 182, 0.5);
+    background-color: rgb(187, 104, 217);
+}
+
+.form-div i {
+    margin-right: 10px;
+}
+
+.list-div {
+    background-color: white;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / .2);
+}

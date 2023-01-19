@@ -1,0 +1,45 @@
+<h1>SHOPPING LIST</h1>
+
+<div class="main">
+  <div class="form-div">
+    <form (ngSubmit)="addProduct()" #form="ngForm">
+      <input
+        ngModel
+        name="name"
+        type="text"
+        placeholder="Product Name"
+        required
+      />
+      <input
+        ngModel
+        name="price"
+        type="number"
+        placeholder="Product Price"
+        required
+      />
+      <input
+        ngModel
+        name="quantity"
+        type="number"
+        placeholder="Quantity"
+        required
+      />
+      <button type="submit" [disabled]="">
+        <i class="fa-solid fa-cart-shopping"></i>Add Product
+      </button>
+    </form>
+  </div>
+
+  <div class="list-div">
+    <h2>LIST</h2>
+    <ul>
+      <li
+        *ngFor="let product of productList"
+        [routerLink]="['/home/', product.name]"
+      >
+        <a>{{ product.name }}</a>
+        <i (click)="removeProduct(product)" class="fa-solid fa-trash"></i>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<h2>Product Details</h2>
+
+<div class="detail-div">
+  <button type="button" routerLink="/home">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <div>
+    <p>Nome prodotto: {{ product?.name }}</p>
+    <p>Prezzo prodotto: {{ product?.price | number : "1.2-2" }}€</p>
+    <p>Quantità: {{ product?.quantity }}</p>
+    <p *ngIf="product">
+      Totale: {{ product.price * product.quantity | number : "1.2-2" }}€
+    </p>
+  </div>
+</div>
